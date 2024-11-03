@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package com.areandina.encriptstring.Method;
+package com.areandina.encriptstring.method;
 
-/**
- *
- * @author mejia
- */
 public class AtbashCipher {
      public static String encrypt(String text) {
         StringBuilder result = new StringBuilder();

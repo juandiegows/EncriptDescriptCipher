@@ -4,11 +4,11 @@
  */
 package com.areandina.encriptstring;
 
-import com.areandina.encriptstring.Method.AtbashCipher;
-import com.areandina.encriptstring.Method.CaesarCipher;
-import com.areandina.encriptstring.Method.MonoalphabeticCipher;
-import com.areandina.encriptstring.Method.ROT13Cipher;
-import com.areandina.encriptstring.Method.VigenereCipher;
+import com.areandina.encriptstring.method.AtbashCipher;
+import com.areandina.encriptstring.method.CaesarCipher;
+import com.areandina.encriptstring.method.MonoalphabeticCipher;
+import com.areandina.encriptstring.method.ROT13Cipher;
+import com.areandina.encriptstring.method.VigenereCipher;
 import javax.swing.JComboBox;
 
 /**
