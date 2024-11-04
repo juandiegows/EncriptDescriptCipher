@@ -23,62 +23,64 @@ public class FormEncript extends javax.swing.JFrame {
     public FormEncript() {
         initComponents();
     }
-    
+
     private static final String KEY = "3";
-     private static final String KEY_STRING = "KEYWORD";
+    private static final String KEY_STRING = "KEYWORD";
+
     public static String decryptBasedOnCombo(String text, JComboBox<String> comboBox) {
         String selectedCipher = (String) comboBox.getSelectedItem();
-        
+
         switch (selectedCipher) {
             case "Cifrado César" -> {
                 int shift = Integer.parseInt(KEY); // Usamos la clave constante para el desplazamiento
                 return CaesarCipher.decrypt(text, shift);
             }
-            
+
             case "Cifrado Atbash" -> {
                 return AtbashCipher.decrypt(text);
             }
-            
+
             case "Cifrado Vigenere" -> {
                 return VigenereCipher.decrypt(text, KEY_STRING); // Usamos la clave constante para Vigenere
             }
             case "ROT13" -> {
                 return ROT13Cipher.decrypt(text);
             }
-            
+
             case "Cifrado de Sustitución Monoalfabético" -> {
                 return MonoalphabeticCipher.decrypt(text);
             }
-            
-            default ->
-                throw new IllegalArgumentException("Método de cifrado no válido");
+
+            default -> {
+                return "Método de cifrado no válido";
+            }
         }
     }
-    
+
     public static String encryptBasedOnCombo(String text, JComboBox<String> comboBox) {
         String selectedCipher = (String) comboBox.getSelectedItem();
-        
+
         switch (selectedCipher) {
             case "Cifrado César" -> {
                 int shift = Integer.parseInt(KEY); // Asume que la clave es un número para el desplazamiento
                 return CaesarCipher.encrypt(text, shift);
             }
-            
+
             case "Cifrado Atbash" -> {
                 return AtbashCipher.encrypt(text);
             }
-            
+
             case "Cifrado Vigenere" -> {
                 return VigenereCipher.encrypt(text, KEY_STRING); // Usa la clave proporcionada para Vigenere
             }
             case "ROT13" -> {
                 return ROT13Cipher.encrypt(text);
             }
-            
+
             case "Cifrado de Sustitución Monoalfabético" -> {
                 return MonoalphabeticCipher.encrypt(text);
             }
-            
+
             default -> {
                 return "Método de cifrado no válido";
             }

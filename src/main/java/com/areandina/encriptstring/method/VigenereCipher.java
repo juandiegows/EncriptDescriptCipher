@@ -4,10 +4,6 @@
  */
 package com.areandina.encriptstring.method;
 
-/**
- *
- * @author mejia
- */
 public class VigenereCipher {
     public static String encrypt(String text, String key) {
         StringBuilder result = new StringBuilder();

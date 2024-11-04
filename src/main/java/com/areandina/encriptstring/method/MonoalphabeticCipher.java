@@ -7,10 +7,7 @@ package com.areandina.encriptstring.method;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- *
- * @author mejia
- */
+
 public class MonoalphabeticCipher {
      private static final Map<Character, Character> substitutionMap = new HashMap<>();
     private static final Map<Character, Character> reverseMap = new HashMap<>();

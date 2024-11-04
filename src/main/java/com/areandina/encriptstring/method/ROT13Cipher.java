@@ -4,10 +4,6 @@
  */
 package com.areandina.encriptstring.method;
 
-/**
- *
- * @author mejia
- */
 
 public class ROT13Cipher {
     public static String encrypt(String text) {
