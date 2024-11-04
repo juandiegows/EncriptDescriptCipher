@@ -24,47 +24,57 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" max="-2" attributes="0"/>
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jScrollPane1" alignment="1" max="32767" attributes="0"/>
                   <Component id="jScrollPane2" alignment="1" max="32767" attributes="0"/>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel2" alignment="0" min="-2" pref="359" max="-2" attributes="0"/>
-                          <Component id="jLabel3" alignment="0" min="-2" pref="359" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  </Group>
                   <Group type="102" alignment="1" attributes="0">
-                      <Component id="cmbMethod" max="32767" attributes="0"/>
+                      <Component id="cmbMethod" pref="275" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="btnDecrypt" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
                       <Component id="btnEncrypt" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <Component id="jLabel3" min="-2" pref="359" max="-2" attributes="0"/>
+                  <Component id="jLabel2" alignment="0" min="-2" pref="359" max="-2" attributes="0"/>
+                  <Component id="txtUser" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtPassword" alignment="1" max="32767" attributes="0"/>
+                  <Component id="txtUserEncript" alignment="0" max="32767" attributes="0"/>
+                  <Component id="txtPasswordEncript" alignment="1" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="txtUser" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="txtPassword" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+              <Component id="txtUserEncript" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="txtPasswordEncript" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" pref="137" max="32767" attributes="0"/>
               <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
-              <Component id="jScrollPane1" pref="88" max="32767" attributes="0"/>
-              <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
               <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
-              <Component id="jScrollPane2" pref="88" max="32767" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="jScrollPane2" pref="110" max="32767" attributes="0"/>
               <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="btnEncrypt" alignment="3" max="32767" attributes="0"/>
-                  <Component id="btnDecrypt" alignment="3" max="32767" attributes="0"/>
-                  <Group type="102" alignment="3" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
                       <Component id="cmbMethod" min="-2" pref="26" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="btnEncrypt" alignment="3" max="32767" attributes="0"/>
+                      <Component id="btnDecrypt" alignment="3" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
@@ -162,6 +172,26 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEncryptActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="txtUser">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Usuario :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="txtPassword">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Contrase&#xf1;a :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="txtPasswordEncript">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Contrase&#xf1;a Encriptada :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="txtUserEncript">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Usuario Encriptada:"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>
