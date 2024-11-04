@@ -9,10 +9,6 @@ import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 
-/**
- *
- * @author mejia
- */
 public class SymmetricEncryption {
         // Método para generar una clave de cifrado AES
     public static SecretKey generateSecretKey() throws Exception {

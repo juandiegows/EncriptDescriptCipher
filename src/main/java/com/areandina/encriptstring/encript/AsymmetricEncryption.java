@@ -11,10 +11,6 @@ import java.security.PublicKey;
 import java.util.Base64;
 import javax.crypto.Cipher;
 
-/**
- *
- * @author mejia
- */
 public class AsymmetricEncryption {
         // Método para generar un par de claves RSA (pública y privada)
     public static KeyPair generateKeyPair() throws Exception {
